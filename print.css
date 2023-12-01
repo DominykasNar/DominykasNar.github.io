@@ -1,0 +1,15 @@
+@media print {
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font: italic 1.2rem "Fira Sans", serif;
+    }
+    .topnav,
+    .div21,
+    .div22{
+        display: none;
+    }
+    
+}
