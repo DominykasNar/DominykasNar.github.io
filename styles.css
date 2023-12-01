@@ -272,3 +272,6 @@ input[type=text], select, textarea {
          
          
         }
+.bold {
+font-weight:bold;
+}
