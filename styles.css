@@ -209,34 +209,47 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font: italic 1.2rem "Fira Sans", serif; }
+    font: italic 1.2rem "Fira Sans", serif;
   .div16 { grid-area: 6 / 8 / 9 / 10;
     background: white;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font: italic 1.2rem "Fira Sans", serif; } 
-.div11,
-.div12,
-.div13,
-.div14,
-.div15,
-.div16 {
-  grid-column: span 10; /* Span all columns by default */
+    font: italic 1.2rem "Fira Sans", serif;
 }
-
-@media screen and (min-width: 600px) {
   .div11,
   .div12,
   .div13,
   .div14,
   .div15,
   .div16 {
-    grid-column: span 5; /* Span 5 columns on screens wider than 600px */
+    grid-column: span 10; /* Span all columns on screens up to 600px */
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 600px) {
+  .div11,
+  .div12,
+  .div13,
+  .div14,
+  .div15,
+  .div16 {
+    grid-column: span 10; /* Span all columns on screens up to 600px */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .div11,
+  .div12,
+  .div13,
+  .div14,
+  .div15,
+  .div16 {
+    grid-column: span 5; /* Span 5 columns on screens between 601px and 900px */
+  }
+}
+
+@media screen and (min-width: 901px) {
   .div11,
   .div12,
   .div13,
