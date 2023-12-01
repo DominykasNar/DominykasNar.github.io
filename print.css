@@ -12,5 +12,8 @@
     .div22{
         display: none;
     }
+   #printPageButton {
+    display: none;
+  }
     
 }
