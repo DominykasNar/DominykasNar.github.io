@@ -12,13 +12,10 @@
     .div22{
         display: none;
     }
+    img {
+      display: none;
+    }
    #printPageButton {
     display: none;
   }
-   @media print {
-  #nuot {
-    display: none;
-  }
-}
-    
 }
