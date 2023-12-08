@@ -13,7 +13,7 @@
         display: none;
     }
     img {
-      display: none;
+      display: none !important;
     }
    #printPageButton {
     display: none;
