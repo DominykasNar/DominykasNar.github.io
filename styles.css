@@ -178,7 +178,7 @@ h3 {
       font-family: Arial, sans-serif;
     }
 
-    .container {
+    .parent2 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
