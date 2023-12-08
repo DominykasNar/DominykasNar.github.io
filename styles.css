@@ -178,15 +178,13 @@ body {
       background-color: #fff; /* White background */
     }
 
-    .parent2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  height: 100vh;
-  position: relative; /* Added position: relative */
-  z-index: 1;
-}
+   .parent2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      height: 100vh; /* 100% of the viewport height */
+    }
 
     .box {
       flex: 1;
@@ -232,8 +230,6 @@ body {
   grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  position: relative; /* Added position: relative */
-  z-index: 2;
 }
 
 .div21 {
