@@ -16,5 +16,10 @@
    #printPageButton {
     display: none;
   }
+   @media print { 
+img { 
+  display: none;
+ } 
+} 
     
 }
