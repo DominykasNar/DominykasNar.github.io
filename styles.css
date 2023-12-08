@@ -171,14 +171,14 @@ h3 {
     text-decoration-color: blue;
     font-size: 2em;
 }
- body {
+body {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      background-color: #fff; /* White background */
     }
 
-    .parent2 {
+    .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -199,13 +199,22 @@ h3 {
       transition: background-color 0.3s ease-in-out;
     }
 
-    @media (max-width: 768px) {
+    @media (min-width: 1024px) {
+      /* 3x2 grid on higher resolutions */
+      .box {
+        flex-basis: calc(33.33% - 20px);
+      }
+    }
+
+    @media (max-width: 1023px) and (min-width: 481px) {
+      /* 2x3 grid on lower resolutions */
       .box {
         flex-basis: calc(50% - 20px);
       }
     }
 
     @media (max-width: 480px) {
+      /* 1x6 grid on mobile resolutions */
       .box {
         flex-basis: calc(100% - 20px);
       }
