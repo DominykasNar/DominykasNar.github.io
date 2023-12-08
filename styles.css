@@ -226,7 +226,6 @@ body {
   grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-      z-index: 2;
 }
 
 .div21 {
@@ -235,18 +234,31 @@ body {
 }
 
 .div22 {
-  grid-area: 3 / 4 / 8 / 6; /* Adjusted the grid-area */
+  grid-area: 3 / 4 / 8 / 6;
   background: white;
 }
 
 .div23 {
-  grid-area: 2 / 5 / 3 / 7; /* Adjusted the grid-area */
+  grid-area: 2 / 5 / 3 / 7;
   background: white;
 }
 
 .div24 {
-  grid-area: 3 / 1 / 8 / 3; /* Adjusted the grid-area */
+  grid-area: 3 / 1 / 8 / 3;
   background: white;
+}
+
+/* Apply z-index to positioned elements */
+.parent3 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .parent3 {
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns for smaller screens */
+  }
 }
 input[type=text], select, textarea {
           width: 100%; 
