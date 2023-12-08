@@ -9,17 +9,16 @@
     }
     .topnav,
     .div21,
-    .div22,
-    #nuot{
+    .div22{
         display: none;
     }
    #printPageButton {
     display: none;
   }
-   @media print { 
-img { 
-  display: none;
- } 
-} 
+   @media print {
+  #nuot {
+    display: none;
+  }
+}
     
 }
