@@ -12,7 +12,7 @@
     .div22{
         display: none;
     }
-    img {
+    body img {
       display: none !important;
     }
    #printPageButton {
