@@ -186,15 +186,15 @@ body {
   }
 }
 
-@media (max-width: 1199px) {
-  /* 2x3 grid on smaller resolutions */
+@media (max-width: 1199px) and (min-width: 768px) {
+  /* 2x3 grid on medium resolutions */
   .box {
     flex-basis: calc(50% - 20px);
   }
 }
 
 @media (max-width: 767px) {
-  /* 1x6 grid on even smaller resolutions */
+  /* 1x6 grid on smaller resolutions */
   .box {
     flex-basis: calc(100% - 20px);
   }
