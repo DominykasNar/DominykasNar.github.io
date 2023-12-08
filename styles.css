@@ -220,21 +220,32 @@ body {
       }
     }
     .parent3 {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      }
-      
-      .div21 { grid-area: 2 / 2 / 3 / 4;
-        background: white;}
-      .div22 { grid-area: 3 / 2 / 8 / 4;
-        background: white; }
-      .div23 { grid-area: 2 / 4 / 3 / 6;
-        background: white; }
-      .div24 { grid-area: 3 / 4 / 8 / 6;
-        background: white; } 
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div21 {
+  grid-area: 2 / 2 / 3 / 4;
+  background: white;
+}
+
+.div22 {
+  grid-area: 3 / 4 / 8 / 6; /* Adjusted the grid-area */
+  background: white;
+}
+
+.div23 {
+  grid-area: 2 / 5 / 3 / 7; /* Adjusted the grid-area */
+  background: white;
+}
+
+.div24 {
+  grid-area: 3 / 1 / 8 / 3; /* Adjusted the grid-area */
+  background: white;
+}
 input[type=text], select, textarea {
           width: 100%; 
           padding: 12px; 
