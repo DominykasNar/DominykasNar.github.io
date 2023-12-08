@@ -200,21 +200,42 @@ body {
   }
 }
     .parent3 {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(8, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
 
-      .div21 { grid-area: 2 / 2 / 3 / 4;
-        background: white;}
-      .div22 { grid-area: 3 / 2 / 8 / 4;
-        background: white; }
-      .div23 { grid-area: 2 / 4 / 3 / 6;
-        background: white; }
-      .div24 { grid-area: 3 / 4 / 8 / 6;
-        background: white; } 
+.div21 {
+  grid-area: 2 / 2 / 3 / 4;
+  background: white;
+}
+
+.div22 {
+  grid-area: 3 / 2 / 8 / 4;
+  background: white;
+}
+
+.div23 {
+  grid-area: 2 / 4 / 3 / 6;
+  background: white;
+}
+
+.div24 {
+  grid-area: 3 / 4 / 8 / 6;
+  background: white;
+}
+
+@media (max-width: 767px) {
+  /* Adjust grid layout for smaller screens if needed */
+  .parent3 {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: repeat(12, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+}
 input[type=text], select, textarea {
           width: 100%; 
           padding: 12px; 
