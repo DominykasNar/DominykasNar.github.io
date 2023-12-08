@@ -151,54 +151,54 @@ h3 {
     font-size: 2em;
 }
 body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-      background-color: #fff; /* White background */
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* White background */
+}
 
-    .parent2 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: stretch;
-      height: 100vh; /* 100% of the viewport height */
-    }
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100vh; /* 100% of the viewport height */
+}
 
-    .box {
-      flex: 1;
-      min-width: 200px; /* Adjust the minimum width as needed */
-      background-color: #3498db;
-      margin: 10px;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease-in-out;
-    }
+.box {
+  flex: 1;
+  min-width: 200px; /* Adjust the minimum width as needed */
+  background-color: #3498db;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
 
-    @media (min-width: 1200px) {
-      /* 3x2 grid on highest resolutions */
-      .box {
-        flex-basis: calc(33.33% - 20px);
-      }
-    }
+@media (min-width: 1200px) {
+  /* 3x2 grid on laptops */
+  .box {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
 
-    @media (max-width: 1199px) and (min-width: 768px) {
-      /* 2x3 grid on lower resolutions */
-      .box {
-        flex-basis: calc(50% - 20px);
-      }
-    }
+@media (max-width: 1199px) and (min-width: 768px) {
+  /* 2x3 grid on smaller resolutions */
+  .box {
+    flex-basis: calc(50% - 20px);
+  }
+}
 
-    @media (max-width: 767px) {
-      /* 1x6 grid on mobile resolutions */
-      .box {
-        flex-basis: calc(100% - 20px);
-      }
-    }
+@media (max-width: 767px) {
+  /* 1x6 grid on even smaller resolutions */
+  .box {
+    flex-basis: calc(100% - 20px);
+  }
+}
     .parent3 {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
