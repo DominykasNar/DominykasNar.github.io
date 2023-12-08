@@ -164,6 +164,8 @@ body {
   justify-content: space-around;
   align-items: stretch;
   height: 100vh; /* 100% of the viewport height */
+  max-width: 1200px; /* Set a max-width for better scaling on larger screens */
+  margin: 0 auto; /* Center the container */
 }
 
 .box {
@@ -177,6 +179,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensure consistent box-sizing */
 }
 
 @media (min-width: 1200px) {
