@@ -178,7 +178,7 @@ body {
       background-color: #fff; /* White background */
     }
 
-    .container {
+    .parent2 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -199,21 +199,21 @@ body {
       transition: background-color 0.3s ease-in-out;
     }
 
-    @media (min-width: 1024px) {
-      /* 3x2 grid on higher resolutions */
+    @media (min-width: 1200px) {
+      /* 3x2 grid on highest resolutions */
       .box {
         flex-basis: calc(33.33% - 20px);
       }
     }
 
-    @media (max-width: 1023px) and (min-width: 481px) {
+    @media (max-width: 1199px) and (min-width: 768px) {
       /* 2x3 grid on lower resolutions */
       .box {
         flex-basis: calc(50% - 20px);
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       /* 1x6 grid on mobile resolutions */
       .box {
         flex-basis: calc(100% - 20px);
