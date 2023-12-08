@@ -224,7 +224,7 @@ body {
     grid-template-rows: repeat(12, auto);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    margin-top: 50px; /* Adjust the margin-top for smaller screens */
+    margin-top: 400px; /* Adjust the margin-top for smaller screens */
   }
 }
 
