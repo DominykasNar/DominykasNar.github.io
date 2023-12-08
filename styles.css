@@ -179,13 +179,14 @@ body {
     }
 
     .parent2 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: stretch;
-      z-index: 1;
-      height: 100vh; /* 100% of the viewport height */
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100vh;
+  position: relative; /* Added position: relative */
+  z-index: 1;
+}
 
     .box {
       flex: 1;
@@ -220,12 +221,19 @@ body {
         flex-basis: calc(100% - 20px);
       }
     }
+@media only screen and (max-width: 768px) {
+  .parent2 {
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns for smaller screens */
+  }
+}
     .parent3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  position: relative; /* Added position: relative */
+  z-index: 2;
 }
 
 .div21 {
@@ -246,12 +254,6 @@ body {
 .div24 {
   grid-area: 3 / 1 / 8 / 3;
   background: white;
-}
-
-/* Apply z-index to positioned elements */
-.parent3 {
-  position: relative;
-  z-index: 2;
 }
 
 /* Media query for smaller screens */
