@@ -1,4 +1,3 @@
-
 body {
   background-color: rgb(204, 188, 188);
 }
@@ -40,6 +39,7 @@ body {
   .dropdown {
     float: left;
     overflow: hidden;
+    z-index: 1000;
   }
   .dropdown .dropbtn {
     font-size: 16px;
@@ -72,6 +72,7 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 1000;
   }
 
   .hero {
@@ -142,6 +143,24 @@ top: -25px;
       width: 100%;
       height: 10px;
      }
+@media screen and (max-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns for smaller screens */
+  }
+
+  .div1, .div2, .div3 {
+    grid-area: auto; /* Allow elements to naturally flow without forced grid placement */
+    width: 100%; /* Make elements take the full width of the screen */
+    margin: 0; /* Remove any margin that might affect the layout */
+  }
+
+  .div2 p:nth-child(2),
+  .div2 p:nth-child(5) {
+    float: none; /* Remove float for better stacking on smaller screens */
+    position: static; /* Reset position */
+    margin-top: 10px; /* Add some spacing between elements */
+  }
+}
 h3 {
   justify-content: center;
       align-items: center;
@@ -200,21 +219,32 @@ body {
       }
     }
     .parent3 {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      }
-      
-      .div21 { grid-area: 2 / 2 / 3 / 4;
-        background: white;}
-      .div22 { grid-area: 3 / 2 / 8 / 4;
-        background: white; }
-      .div23 { grid-area: 2 / 4 / 3 / 6;
-        background: white; }
-      .div24 { grid-area: 3 / 4 / 8 / 6;
-        background: white; } 
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div21 {
+  grid-area: 2 / 2 / 3 / 4;
+  background: white;
+}
+
+.div22 {
+  grid-area: 3 / 4 / 8 / 6; /* Adjusted the grid-area */
+  background: white;
+}
+
+.div23 {
+  grid-area: 2 / 5 / 3 / 7; /* Adjusted the grid-area */
+  background: white;
+}
+
+.div24 {
+  grid-area: 3 / 1 / 8 / 3; /* Adjusted the grid-area */
+  background: white;
+}
 input[type=text], select, textarea {
           width: 100%; 
           padding: 12px; 
@@ -273,3 +303,6 @@ input[type=text], select, textarea {
          
          
         }
+.bold {
+font-weight:bold;
+}
